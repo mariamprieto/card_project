@@ -1,4 +1,5 @@
 import './App.css';
+import DisplayCourse from "./mapeoJson.js"
 
 const display = document.querySelector("article");
 
@@ -27,13 +28,7 @@ function App() {
       <article className="grid">
         <h2>Programming Courses</h2>
         <div className="information">
-          <div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizbeHXSnhVURahe4dVVYso6CM7AmoRtKUaA&usqp=CAU" alt="Exemplo"></img>
-            <h2> Course Digital </h2>
-            <h3> Hours</h3>
-            <p>Learn HTML</p>
-            <p> precio</p>
-          </div>
+        < DisplayCourse/>
         </div>
       </article>
     </div>
