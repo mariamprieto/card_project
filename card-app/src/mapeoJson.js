@@ -5,7 +5,7 @@ function cardCourse() {
     const [courses, setCourse] = useState([])
 
     useEffect(() => {
-        fetch("json/data.json")
+        fetch("http://localhost:3004/Card")
             .then(response => response.json())
             .then(datos => {
                 setCourse(datos)
