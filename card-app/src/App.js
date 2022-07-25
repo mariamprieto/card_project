@@ -1,5 +1,5 @@
 import './App.css';
-import DisplayCourse from "./mapeoJson.js"
+import DisplayCourse from "./mapeoJson"
 
 const display = document.querySelector("article");
 

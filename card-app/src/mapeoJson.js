@@ -8,7 +8,7 @@ function cardCourse() {
         fetch("json/data.json")
             .then(response => response.json())
             .then(datos => {
-                setPostres(datos)
+                setCourse(datos)
             })
     }, [])
 
@@ -28,7 +28,7 @@ export default function DisplayCourse() {
                 <h2>{item.name}</h2>
                 <h3>{item.address}</h3>
                 <p> {item.phone}</p>
-                <img src={`${process.env.PUBLIC_URL}/imagenes/${item.img}`} alt={item.name} width="30px" className="img-fluid" />
+                <img src={item.img} alt={item.name} width="30px" className="img-fluid" />
             </div>
 
         ))  
